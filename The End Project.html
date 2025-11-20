@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>English Project: Pronouns</title>
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --primary: #2563eb;
+      --secondary: #9333ea;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --card: #ffffff;
+      --shadow: rgba(0,0,0,0.1);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      scroll-behavior: smooth; /* ✨ smooth scrolling */
+    }
+
+    /* 🌟 Navigation bar */
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--primary);
+      padding: 0.75rem 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 0.75rem;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px var(--shadow);
+    }
+
+    h2 {
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 0.5rem;
+    }
+    h3 {
+      color: var(--secondary);
+      margin-top: 1rem;
+    }
+
+    .example, .rule {
+      background: #f3f4f6;
+      border-left: 4px solid var(--primary);
+      padding: 0.75rem;
+      margin: 0.75rem 0;
+      border-radius: 6px;
+    }
+
+    .mnemonics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .mnemonic-card {
+      background: #eef2ff;
+      border-left: 4px solid var(--secondary);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1f2937;
+      color: white;
+      margin-top: 2rem;
+    }
+
+    a.button {
+      display: inline-block;
+      background: var(--primary);
+      color: white;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    a.button:hover {
+      background: var(--secondary);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav>
+    <a href="#definition">Definition</a>
+    <a href="#types">Types</a>
+    <a href="#cases">Cases</a>
+    <a href="#usage">Usage</a>
+    <a href="#mnemonics">Mnemonics</a>
+    <a href="#selfcheck">Self-Check</a>
+  </nav>
+
+  <header id="top">
+    <h1>English Project: Pronouns</h1>
+    <p>Definition, types, cases, correct usage, and spelling mnemonics — all in one guide.</p>
+  </header>
+
+  <main class="container">
+    <section id="definition">
+      <h2>Definition of Pronouns</h2>
+      <p>A pronoun is a word that replaces a noun to avoid repetition and make sentences smoother.</p>
+      <div class="example">Example: “Max bought a book. <strong>He</strong> read it overnight.”</div>
+    </section>
+
+    <section id="types">
+      <h2>Types of Pronouns</h2>
+      <h3>Personal Pronouns</h3>
+      <p>Subject: I, you, he, she, it, we, they</p>
+      <p>Object: me, you, him, her, it, us, them</p>
+      <div class="example">Example: “<strong>They</strong> invited <strong>us</strong>.”</div>
+      <h3>Possessive Pronouns</h3>
+      <p>mine, yours, his, hers, ours, theirs</p>
+      <div class="example">Example: “This pen is <strong>hers</strong>.”</div>
+    </section>
+
+    <section id="cases">
+      <h2>Pronoun Cases</h2>
+      <h3>Nominative (Subject)</h3>
+      <div class="example">Example: “<strong>She</strong> writes daily.”</div>
+      <div class="rule">Rule: Use nominative when the pronoun is the subject.</div>
+      <h3>Objective (Object)</h3>
+      <div class="example">Example: “The coach praised <strong>him</strong>.”</div>
+      <div class="rule">Rule: Use objective after verbs or prepositions.</div>
+    </section>
+
+    <section id="usage">
+      <h2>Correct Usage Rules</h2>
+      <div class="rule">Pronouns must agree with their antecedents in number and person.</div>
+      <div class="rule">Use <em>who</em> for subjects, <em>whom</em> for objects.</div>
+    </section>
+
+    <section id="mnemonics">
+      <h2>Spelling Mnemonics</h2>
+      <div class="mnemonics">
+        <div class="mnemonic-card">
+          <h3>I before E, except after C</h3>
+          <p>Believe, achieve → correct. Receive, ceiling → exception.</p>
+        </div>
+        <div class="mnemonic-card">
+          <h3>Affect vs. Effect</h3>
+          <p>Affect = Action (verb). Effect = End result (noun).</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="selfcheck">
+      <h2>Quick Self-Check</h2>
+      <ul>
+        <li>Subject → nominative case</li>
+        <li>Object → objective case</li>
+        <li>Pronouns must be clear and consistent</li>
+      </ul>
+      <a class="button" href="#top">Back to Top</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made for an English project on pronouns. Hosted online for easy access.</p>
+  </footer>
+</body>
+</html>
